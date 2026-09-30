@@ -117,7 +117,7 @@
           "options": {
             "settings": {
               "contextPath": "/Travel",
-              "variantManagement": "Page",
+              "variantManagement": "None",      
               "navigation": {
                 "Travel": {
                   "detail": {
