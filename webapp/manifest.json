@@ -117,7 +117,28 @@
           "options": {
             "settings": {
               "contextPath": "/Travel",
-              "variantManagement": "Page",      
+              "variantManagement": "Page",
+               "views": {
+                "paths": [
+	             {
+	                "key": "tab1",
+	                "annotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#SPV_All"
+	             },
+	             { 
+	                "key": "tab2",
+	                "annotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#SPV_Accepted"
+	             },
+	             { 
+	                "key": "tab3",
+	                "annotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#SPV_Rejected"
+	             },
+               {
+	                "key": "tab4",
+	                "annotationPath":        "com.sap.vocabularies.UI.v1.SelectionVariant#Open"
+	             }
+	        ],
+	        "showCounts" : false
+	    },
               "navigation": {
                 "Travel": {
                   "detail": {
@@ -129,21 +150,24 @@
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
                     "type": "ResponsiveTable",
-                  "quickVariantSelection": {
+                  "quickVariantSelection1": {
                      "paths": [
-                       {
+                        {
                            "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#All"
-                       },
+                        },
                         {
                            "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Open"
                         },
                         {
                            "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Accepted"
+                        },
+                        {
+                           "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Rejected"
                         }
                       
                      ],
                      "hideTableTitle": true,
-                      "showCounts": true
+                     "showCounts": true
                     
                   }
                   }
