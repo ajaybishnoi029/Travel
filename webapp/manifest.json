@@ -111,7 +111,6 @@
           "pattern": "Travel({key}):?query:",
           "name": "TravelObjectPage",
           "target": [
-           
             "TravelObjectPage"
           ]
         },
@@ -163,8 +162,32 @@
                       "showCounts": true
                     }
                   }
+                },
+                "": {
+                  "actions": {
+                    "Approvebtn": {
+                      "press": "travel.ext.controller.Approvebtn.ApprovebtnM",
+                      "visible": true,
+                      "enabled": true,
+                      "requiresSelection": false,
+                      "text": "Approve"
+                    }
+                  }
                 }
-              }
+              },
+              "content": {
+                "header": {
+                  "actions": {
+                    "hdt_btn": {
+                      "press": "travel.ext.controller.Hdt_btn.hdt_btn",
+                      "visible": true,
+                      "enabled": true,
+                      "text": "Click me"
+                    }
+                  }
+                }
+              },
+              "initialLoad": "Enabled"
             }
           },
           "controlAggregation": "beginColumnPages",

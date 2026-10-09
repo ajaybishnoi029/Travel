@@ -9,7 +9,13 @@
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
             <Annotations Target="SAP__self.TravelType">
                 <Annotation Term="UI.SelectionFields">
-                    <Collection></Collection>
+                    <Collection>
+
+                        <PropertyPath>TravelID</PropertyPath>
+                        <PropertyPath>AgencyID</PropertyPath>
+
+                        <PropertyPath>CustomerID</PropertyPath>
+</Collection>
                 </Annotation>
             </Annotations>
         </Schema>
