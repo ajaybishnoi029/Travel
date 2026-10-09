@@ -91,7 +91,7 @@
     "resources": {
       "css": []
     },
-      "routing": {
+    "routing": {
       "config": {
         "flexibleColumnLayout": {
           "defaultTwoColumnLayoutType": "TwoColumnsMidExpanded",
@@ -111,7 +111,7 @@
           "pattern": "Travel({key}):?query:",
           "name": "TravelObjectPage",
           "target": [
-            "TravelList",
+           
             "TravelObjectPage"
           ]
         },
@@ -119,7 +119,6 @@
           "pattern": "Travel({key})/_Booking({key2}):?query:",
           "name": "BookingObjectPage",
           "target": [
-            "TravelList",
             "TravelObjectPage",
             "BookingObjectPage"
           ]
@@ -188,7 +187,7 @@
               }
             }
           },
-          "controlAggregation": "midColumnPages",
+          "controlAggregation": "beginColumnPages",
           "contextPattern": "/Travel({key})"
         },
         "BookingObjectPage": {
@@ -201,7 +200,7 @@
               "contextPath": "/Travel/_Booking"
             }
           },
-          "controlAggregation": "endColumnPages",
+          "controlAggregation": "midColumnPages",
           "contextPattern": "/Travel({key})/_Booking({key2})"
         }
       }
